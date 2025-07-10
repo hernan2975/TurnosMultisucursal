@@ -138,7 +138,4 @@ Turnos simulados
 Útil para no partir de una base vacía. Se puede modificar fácilmente con tus propios datos o integrarlo con fixtures más complejos
 
 🧾 Licencia
-Este proyecto se distribuye bajo la MIT License. Ver el archivo LICENSE para más detalles.
-
-✨ Autor
-Hernán Luis Lang Desarrollador Full Stack con enfoque en accesibilidad, modularidad y soluciones escalables.
+Este proyecto se distribuye bajo la MIT License. Ver el archivo LICENSE para más detalles..
