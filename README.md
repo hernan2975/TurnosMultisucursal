@@ -58,13 +58,33 @@ TurnosMultisucursal/
 │   ├── __init__.py
 │   ├── config.py
 │   ├── models/
+│   │   └── models.py
 │   ├── routes/
+│   │   └── turnos.py
 │   ├── templates/
+│   │   └── base.html
 │   ├── static/
+│   │   └── style.css
 ├── migrations/
+│   ├── env.py
+│   ├── script.py.mako
+│   ├── alembic.ini
+│   ├── README
+│   └── versions/
+│       └── <timestamp>_initial_migration.py
+├── tests/
+│   ├── conftest.py
+│   ├── test_models.py
+│   └── test_routes.py
+├── .env
+├── .gitignore
+├── .gitattributes
+├── LICENSE
+├── README.md
 ├── requirements.txt
 ├── run.py
-├── README.md
+├── seed.py
+├── start.sh
 
 📦 Roadmap
 🧠 Autenticación con Flask-Login y autorización por roles
@@ -83,6 +103,39 @@ Mejoras en accesibilidad
 Integración de APIs locales o internacionales
 
 Componentes UI reutilizables
+
+---
+
+## 🧰 Scripts Útiles
+
+Estos scripts están pensados para facilitar el trabajo en entornos de desarrollo o despliegue inicial.
+
+### `start.sh`
+
+Automatiza la configuración inicial del proyecto:
+
+```bash
+./start.sh
+
+Acciones que realiza:
+
+-Crea entorno virtual
+-Instala dependencias
+-Inicializa migraciones
+--Pobla la base con datos ficticios (seed.py)
+-Inicia la aplicación
+
+python seed.py
+
+Crea:
+
+Sucursales
+
+Profesionales con especialidad y correo
+
+Turnos simulados
+
+Útil para no partir de una base vacía. Se puede modificar fácilmente con tus propios datos o integrarlo con fixtures más complejos
 
 🧾 Licencia
 Este proyecto se distribuye bajo la MIT License. Ver el archivo LICENSE para más detalles.
