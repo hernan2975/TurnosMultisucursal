@@ -13,6 +13,16 @@ TurnosMultisucursal/
 │   ├── static/
 │   │   └── style.css
 ├── migrations/
+│   ├── env.py
+│   ├── script.py.mako
+│   ├── alembic.ini
+│   ├── README
+│   └── versions/
+│       └── <timestamp>_initial_migration.py
+├── tests/
+│   ├── conftest.py
+│   ├── test_models.py
+│   └── test_routes.py
 ├── .env
 ├── .gitignore
 ├── .gitattributes
@@ -20,3 +30,5 @@ TurnosMultisucursal/
 ├── README.md
 ├── requirements.txt
 ├── run.py
+├── seed.py
+├── start.sh
