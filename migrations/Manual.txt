@@ -1,0 +1,9 @@
+Cuando se ejecuté flask db init, se genera lo siguiente
+migrations/
+├── README
+├── alembic.ini
+├── env.py
+├── script.py.mako
+└── versions/
+    └── <timestamp>_initial_migration.py
+
