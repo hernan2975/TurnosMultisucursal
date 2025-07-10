@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Turnos Multisucursal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Listado de Turnos</h1>
+    <ul>
+        {% for turno in turnos %}
+            <li>{{ turno.fecha }} - {{ turno.hora }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
